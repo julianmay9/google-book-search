@@ -1,0 +1,39 @@
+.jumbotron {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+  
+.jumbotron::after {
+    content: "";
+    display: block;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+}
+  
+.jumbotron * {
+    position: relative;
+    z-index: 2;
+}
+  
+.jumbotron h1, .jumbotron h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+  
+.jumbotron h1 {
+    font-size: 60px;
+    padding-top: 80px;
+    margin-top: 0;
+}
+
+.jumbotron h2 {
+    font-size: 30px;
+}
